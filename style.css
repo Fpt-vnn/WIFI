@@ -1,0 +1,99 @@
+:root {
+  --orange: #f37021;
+  --blue: #0072bc;
+  --gray: #6b7280;
+  --bg: #f6f8fa;
+  --card: #fff;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 30px;
+  color: #111;
+}
+
+.container {
+  max-width: 640px;
+  margin: auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  animation: fadeIn 0.7s ease-in;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 180px;
+}
+
+h1 {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.desc {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: linear-gradient(90deg, var(--orange), var(--blue));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+.contact-box {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--gray);
+  font-size: 15px;
+}
+
+.contact-box a {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
