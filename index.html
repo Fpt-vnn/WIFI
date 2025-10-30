@@ -24,7 +24,7 @@
     .logo {
       display: block;
       margin: 0 auto 20px;
-      width: 160px;
+      width: 180px;
     }
     h2 {
       text-align: center;
@@ -38,8 +38,7 @@
       color: #444;
     }
     input,
-    textarea,
-    select {
+    textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -88,22 +87,18 @@
       <label for="phone">Số điện thoại</label>
       <input type="tel" id="phone" name="Số điện thoại" placeholder="Nhập số điện thoại..." required />
 
-      <label for="address">Địa chỉ lắp đặt</label>
-      <input type="text" id="address" name="Địa chỉ lắp đặt" placeholder="Nhập địa chỉ..." required />
+      <label for="address">Địa chỉ (theo địa chỉ mới sau sáp nhập)</label>
+      <input type="text" id="address" name="Địa chỉ" placeholder="Nhập địa chỉ..." required />
 
-      <label for="package">Gói cước muốn đăng ký</label>
-      <select id="package" name="Gói cước">
-        <option value="150Mbps">Gói 150Mbps</option>
-        <option value="200Mbps">Gói 200Mbps</option>
-        <option value="1Gbps">Gói 1Gbps</option>
-      </select>
+      <label for="package">Nhu cầu sử dụng (không bắt buộc)</label>
+      <input type="text" id="package" name="Nhu cầu sử dụng" placeholder="Ví dụ: Gia đình, Game, Văn phòng..." />
 
-      <label for="note">Ghi chú (nếu có)</label>
-      <textarea id="note" name="Ghi chú" rows="3" placeholder="Ghi chú thêm..."></textarea>
+      <label for="devices">Bao nhiêu thiết bị sử dụng (không bắt buộc)</label>
+      <input type="number" id="devices" name="Số thiết bị sử dụng" placeholder="Ví dụ: 5" />
 
       <button type="submit">Gửi đăng ký</button>
 
-      <!-- Ẩn captcha + trang cảm ơn -->
+      <!-- Ẩn captcha + redirect -->
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_next" value="https://kha-ngucode-47.github.io/WIFI/success.html" />
       <input type="hidden" name="_subject" value="📩 Có khách hàng mới đăng ký WiFi FPT" />
