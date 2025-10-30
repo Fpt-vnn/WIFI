@@ -4,109 +4,55 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Đăng ký Wi-Fi FPT Telecom</title>
-  <style>
-    :root {
-      --bg: #f6f8fa;
-      --card: #ffffff;
-      --accent: #f37021;
-      --accent2: #0072bc;
-      --muted: #6b7280;
-    }
-    body {
-      font-family: Inter, ui-sans-serif, system-ui;
-      background: var(--bg);
-      margin: 0;
-      padding: 32px;
-      color: #111;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 28px;
-      box-shadow: 0 8px 30px rgba(17, 24, 39, 0.06);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 22px;
-      color: var(--accent2);
-    }
-    .logo {
-      display: block;
-      margin: 0 auto 20px auto;
-      width: 160px;
-      height: auto;
-    }
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid #e6e9ee;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
-    button {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color: #fff;
-      border: none;
-      padding: 12px 18px;
-      border-radius: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 10px;
-      font-size: 15px;
-      transition: opacity 0.2s;
-    }
-    button:hover {
-      opacity: 0.9;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/FTEL_Logo.svg" alt="FPT Telecom Logo" class="logo" />
-      <h1>Đăng ký Wi-Fi FPT Telecom</h1>
+      <h1>Đăng ký lắp đặt Wi-Fi FPT Telecom</h1>
+      <p class="desc">Chỉ cần điền thông tin, nhân viên FPT sẽ liên hệ tư vấn gói cước và hỗ trợ lắp đặt miễn phí tận nhà.</p>
 
       <form action="https://formsubmit.co/dovankha20001120@gmail.com" method="POST">
-        <!-- ⚙️ Cấu hình FormSubmit -->
-        <input type="hidden" name="_subject" value="📩 Có khách hàng mới đăng ký Wi-Fi FPT">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="📩 KHÁCH HÀNG MỚI - Đăng ký Wi-Fi FPT Telecom">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <!-- ✅ Đường dẫn chính xác tới trang cảm ơn -->
         <input type="hidden" name="_next" value="https://kha-ngucode-47.github.io/WIFI/success.html">
 
-        <label for="fullname">Họ và tên *</label>
+        <label for="fullname">👤 Họ và tên *</label>
         <input id="fullname" name="Họ và tên" type="text" placeholder="Nguyễn Văn A" required>
 
-        <label for="phone">Số điện thoại *</label>
+        <label for="phone">📞 Số điện thoại *</label>
         <input id="phone" name="Số điện thoại" type="tel" placeholder="0912345678" required>
 
-        <label for="address">Địa chỉ (Tỉnh, Xã — theo địa chỉ mới sau sáp nhập) *</label>
-        <input id="address" name="Địa chỉ" type="text" placeholder="VD: Xã Phú Lộc, Huyện Đại Từ, Tỉnh Thái Nguyên" required>
+        <label for="address">🏠 Địa chỉ (Tỉnh, Huyện, Xã — sau sáp nhập) *</label>
+        <input id="address" name="Địa chỉ" type="text" placeholder="VD: Phường Phú Lộc, TP Thái Nguyên" required>
 
-        <label for="need">Nhu cầu sử dụng (không bắt buộc)</label>
-        <textarea id="need" name="Nhu cầu sử dụng" placeholder="Ví dụ: Dùng cho học online, camera, xem phim,..."></textarea>
+        <label for="plan">📦 Gói cước muốn đăng ký *</label>
+        <select id="plan" name="Gói cước" required>
+          <option value="">-- Chọn gói cước --</option>
+          <option>Gói Super 80Mbps - 180.000đ/tháng</option>
+          <option>Gói Super 150Mbps - 210.000đ/tháng</option>
+          <option>Gói Super 250Mbps - 250.000đ/tháng</option>
+          <option>Gói Super 400Mbps - 310.000đ/tháng</option>
+        </select>
 
-        <label for="devices">Bao nhiêu thiết bị sử dụng (không bắt buộc)</label>
+        <label for="need">💡 Nhu cầu sử dụng</label>
+        <textarea id="need" name="Nhu cầu sử dụng" placeholder="VD: Dùng cho học online, camera, làm việc tại nhà,..."></textarea>
+
+        <label for="devices">🔢 Số thiết bị sử dụng</label>
         <input id="devices" name="Số thiết bị" type="text" placeholder="Ví dụ: 3 thiết bị">
 
-        <button type="submit">Gửi đăng ký</button>
+        <button type="submit">🚀 GỬI ĐĂNG KÝ NGAY</button>
       </form>
+
+      <div class="contact-box">
+        <p>📞 Hỗ trợ tư vấn 24/7:</p>
+        <a href="tel:19006600">1900 6600</a> • 
+        <a href="https://zalo.me/0345678901" target="_blank">Zalo</a> • 
+        <a href="https://m.me/fpttelecom" target="_blank">Messenger</a>
+      </div>
     </div>
   </div>
 </body>
