@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Đăng ký WiFi FPT Telecom</title>
   <style>
     body {
@@ -15,58 +15,81 @@
     .container {
       width: 100%;
       max-width: 600px;
-      margin: 50px auto;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 160px;
     }
     h2 {
       text-align: center;
-      color: #e44d26;
+      color: #f37021;
+      margin-bottom: 25px;
     }
     label {
       display: block;
       margin-top: 15px;
       font-weight: bold;
+      color: #444;
     }
-    input, textarea, select {
+    input,
+    textarea,
+    select {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
+      font-size: 15px;
     }
     button {
       width: 100%;
-      background-color: #e44d26;
+      background-color: #f37021;
       color: #fff;
-      padding: 12px;
+      padding: 14px;
       border: none;
-      border-radius: 6px;
-      margin-top: 20px;
+      border-radius: 8px;
+      margin-top: 25px;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
+      transition: 0.3s;
     }
     button:hover {
-      background-color: #cf3f1f;
+      background-color: #d85b17;
+    }
+    footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/a/a7/FTEL_Logo.svg"
+      alt="FPT Telecom Logo"
+      class="logo"
+    />
+
     <h2>ĐĂNG KÝ WIFI FPT TELECOM</h2>
+
     <form action="https://formsubmit.co/dovankha20001120@gmail.com" method="POST">
-      
       <label for="name">Họ và tên</label>
-      <input type="text" id="name" name="Họ và tên" placeholder="Nhập họ và tên..." required>
+      <input type="text" id="name" name="Họ và tên" placeholder="Nhập họ và tên..." required />
 
       <label for="phone">Số điện thoại</label>
-      <input type="tel" id="phone" name="Số điện thoại" placeholder="Nhập số điện thoại..." required>
+      <input type="tel" id="phone" name="Số điện thoại" placeholder="Nhập số điện thoại..." required />
 
       <label for="address">Địa chỉ lắp đặt</label>
-      <input type="text" id="address" name="Địa chỉ lắp đặt" placeholder="Nhập địa chỉ..." required>
+      <input type="text" id="address" name="Địa chỉ lắp đặt" placeholder="Nhập địa chỉ..." required />
 
       <label for="package">Gói cước muốn đăng ký</label>
       <select id="package" name="Gói cước">
@@ -81,10 +104,12 @@
       <button type="submit">Gửi đăng ký</button>
 
       <!-- Ẩn captcha + trang cảm ơn -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://kha-ngucode-47.github.io/WIFI/success.html">
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://kha-ngucode-47.github.io/WIFI/success.html" />
+      <input type="hidden" name="_subject" value="📩 Có khách hàng mới đăng ký WiFi FPT" />
     </form>
   </div>
 
+  <footer>© 2025 FPT Telecom — Đăng ký dịch vụ Internet tốc độ cao</footer>
 </body>
 </html>
