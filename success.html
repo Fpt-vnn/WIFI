@@ -7,84 +7,47 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
+      background: #f6f8fa;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      overflow: hidden;
+      margin: 0;
     }
-    .container {
-      background: #fff;
+    .card {
+      background: white;
       padding: 40px 30px;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.08);
       text-align: center;
-      max-width: 480px;
-      animation: fadeIn 0.8s ease-out;
+      max-width: 500px;
+      animation: pop 0.7s ease;
     }
-    .logo {
-      width: 150px;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: slideDown 0.8s forwards;
-    }
-    h2 {
-      color: #f37021;
-      margin-bottom: 10px;
-      opacity: 0;
-      animation: fadeUp 0.9s forwards 0.2s;
-    }
-    p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 30px;
-      opacity: 0;
-      animation: fadeUp 0.9s forwards 0.4s;
-    }
+    img { width: 140px; margin-bottom: 15px; }
+    h2 { color: #0072bc; margin: 10px 0; }
+    p { color: #555; font-size: 16px; margin-bottom: 25px; }
     a {
-      display: inline-block;
-      background: linear-gradient(90deg, #f37021, #0072bc);
+      background: linear-gradient(90deg,#f37021,#0072bc);
       color: white;
-      text-decoration: none;
       padding: 12px 28px;
       border-radius: 8px;
-      font-weight: bold;
-      font-size: 15px;
-      transition: transform 0.2s, opacity 0.3s;
-      opacity: 0;
-      animation: fadeUp 1s forwards 0.6s, pulse 1.8s infinite 1.6s;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s;
     }
-    a:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    @keyframes slideDown {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(243,112,33,0.5); }
-      50% { box-shadow: 0 0 0 10px rgba(243,112,33,0); }
+    a:hover { transform: scale(1.05); }
+    @keyframes pop {
+      from {opacity: 0; transform: scale(0.95);}
+      to {opacity: 1; transform: scale(1);}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/FTEL_Logo.svg" alt="FPT Logo" class="logo" />
-    <h2>🎉 GỬI THÀNH CÔNG!</h2>
-    <p>Cảm ơn bạn đã đăng ký Wi-Fi FPT Telecom.<br>
-    Bộ phận tư vấn sẽ liên hệ trong thời gian sớm nhất để hỗ trợ chi tiết.</p>
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/FTEL_Logo.svg" alt="FPT Logo">
+    <h2>🎉 Gửi đăng ký thành công!</h2>
+    <p>Cảm ơn bạn đã quan tâm đến dịch vụ của <b>FPT Telecom</b>.<br>
+    Nhân viên tư vấn sẽ liên hệ hỗ trợ bạn trong thời gian sớm nhất.</p>
     <a href="https://kha-ngucode-47.github.io/WIFI/">← Quay lại trang đăng ký</a>
   </div>
 </body>
